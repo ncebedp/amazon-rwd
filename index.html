@@ -2,164 +2,756 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body {
-            background-color: #E3E6E6;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background-color: #E3E6E6;
+      /* font-family: inherit; */
+    }
 
-        div {
-            text-align: center;
-            border: 1px solid grey;
-        }
+    .s_tbdr {
+      border: 1px solid grey;
+    }
 
-        header :first-child {
-            background-color: #131921;
-            height: 60px;
-        }
+    header>div:first-child {
+      background-color: #131921;
+      height: 60px;
+    }
 
-        header :last-child {
-            background-color: #232F3E;
-            height: 40px;
-        }
-
+    header>div:last-child {
+      background-color: #232F3E;
+      height: 39px;
+    }
 
 
-        .s_gradient {
-            background: -webkit-linear-gradient(#146981, #E3E6E6 10%);
-        }
 
-        footer :first-child {
-            background-color: #37475A;
-            height: 50px;
-        }
+    .s_gradient {
+      background: -webkit-linear-gradient(#146981, #E3E6E6 10%);
+    }
 
-        footer :nth-child(2) {
-            background-color: #232F3E;
-            height: 460px;
-        }
+    footer>div:first-child {
+      background-color: #37475A;
+      height: 50px;
+    }
 
-        footer :last-child {
-            background-color: #131A22;
-            height: 230px;
-        }
+    footer>div:nth-child(2) {
+      background-color: #232F3E;
+      height: 460px;
 
-        .main_1 {
-            height: 250px;
-        }
+    }
 
-        .main_2 {
-            height: 420px;
-        }
+    footer>div:last-child {
+      background-color: #131A22;
 
-        .main_3,
-        .main_4,
-        .main_6,
-        .main_7 {
-            height: 285px;
-        }
+    }
 
-        .main_5,
-        .main_11 {
-            height: 425px;
-        }
 
-        .main_8,
-        .main_10 {
-            height: 430px;
-        }
 
-        .main_9 {
-            height: 490px;
-        }
+    .main_1 {
+      height: 250px;
+      z-index: 2;
+      position: relative;
+    }
 
-        .main_12 {
-            height: 290px;
-        }
+    .main_2 {
+      height: 420px;
+      z-index: 10;
+      position: relative;
+    }
 
-        .main_13 {
-            height: 190px;
-        }
-    </style>
+    .main_3,
+    .main_4,
+    .main_6,
+    .main_7 {
+      height: 285px;
+    }
+
+    .main_5,
+    .main_11 {
+      height: 425px;
+    }
+
+    .main_8,
+    .main_10 {
+      height: 430px;
+    }
+
+    .main_9 {
+      height: 490px;
+    }
+
+    .main_12 {
+      height: 290px;
+    }
+
+    .main_13 {
+      height: 190px;
+    }
+
+    footer a {
+      color: #ddd !important;
+      font-size: 12px !important;
+      text-decoration: none !important;
+    }
+
+    .s_footer_c1 {
+      height: 160px;
+    }
+
+    .s_footer_c2 {
+      height: 87px;
+      font-size: 12px !important;
+
+    }
+
+    header ul li:hover {
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+
+    .modal-content {
+      top: -30px;
+      left: -104%;
+      border-radius: 0px;
+      height: 100vh;
+      width: 76%;
+
+    }
+
+
+    .modal-header {
+      background-color: #232F3E;
+      height: 52px;
+    }
+
+    .modal-body {
+      overflow-y: scroll;
+    }
+
+    .search_dropdown {
+      height: 375px;
+      width: 27%;
+      font-size: 0.9rem;
+      font-weight: bold;
+
+    }
+
+    .search_dropdown li:hover a {
+      background-color: #1b66d2 !important;
+      color: #fff;
+      font-weight: bold;
+    }
+
+
+    header form:focus-within {
+      outline: 3px solid orange !important;
+      border-radius: 5px;
+      box-shadow: none !important;
+    }
+
+    .spritesheet {
+      width: 18px;
+      height: 12px;
+      background-image: url("img/country-icon.png");
+      background-position: -18px -36px;
+      background-repeat: no-repeat;
+
+    }
+
+
+    .s_submenu {
+      width: 230px;
+      height: 332px;
+      z-index: 20;
+      display: none;
+    }
+
+    .s_menu>li:hover ul {
+      display: block;
+
+    }
+
+    .s_menu>li:hover .arrow-down {
+      visibility: visible;
+    }
+
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff;
+      visibility: hidden;
+    }
+
+    .s_submenu2 {
+      width: 420px;
+      /* height: 410px; */
+      height: 460px;
+      left: -100px;
+    }
+
+    .umenu>li a:hover,
+    .umenu>a>li:hover {
+      color: orange !important;
+
+    }
+
+
+    .s_slider_control {
+      height: 250px;
+      width: 80px;
+
+
+
+    }
+
+    .s_slider_control:hover {
+      border: 3px solid #008296;
+
+
+
+    }
+
+    .prodctut_carousel{
+      width: 45px;
+      height: 100px;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="text-white">
-        <div class="">Header Top</div>
-        <div class="">Header Bottom</div>
-    </header>
-
-    <main>
-        <div class="container-fluid">
-            <div class="main_1">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/July/Unrec/3000/3._CB569386741_.jpg" class="d-block w-100" alt="1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2024/BAU/Hero/Unrec/D91435399_WLA-BAU-Unrec-Hero_DesktopTallHero_3000x1200._CB582928607_.jpg" class="d-block w-100" alt="2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg" class="d-block w-100" alt="3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/July/Unrec/3000/1._CB569386741_.jpg" class="d-block w-100" alt="4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg" class="d-block w-100" alt="5">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/CookwareDining/Aman/Primeday24/5300---Kitchen-hero---BAU---update_3000X1200._CB569213170_.jpg" class="d-block w-100" alt="8">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Media/BAU/D132995370_Homepage_DesktopHeroTemplate_3000x1200._CB557152260_.jpg" class="d-block w-100" alt="7">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG24/Smart_Watches/MED_MAY/Tall_Hero_1500X600_BAU_NewLaunches._CB554931622_.jpg" class="d-block w-100" alt="6">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="main_2">main2</div>
-            <div class="main_3">main3</div>
-            <div class="main_4">main4</div>
-            <div class="main_5">main5</div>
-            <div class="main_6">main6</div>
-            <div class="main_7">main7</div>
-            <div class="raw">
-                <div class="main_8 col-8 offset-2">main8</div>
-            </div>
-            <div class="main_9">main9</div>
-            <div class="main_10">main10</div>
-            <div class="main_11">main11</div>
-            <div class="main_12">main12</div>
+  <!-- Modal -->
+  <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-white ps-4 fw-bold" id="exampleModalLabel"><i
+              class="fa-solid fa-circle-user fa-lg pe-1"></i> Hello, sign in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="main_13">main13</div>
-    </main>
-    <footer class="text-white">
-        <div>A</div>
-        <div>B</div>
-        <div>C</div>
-    </footer>
+        <div class="modal-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
+  <header class="text-white">
+    <div>
+      <div class="row m-0 h-100">
+        <div class="col-3 p-0">
+
+          <ul class="nav h-100  ">
+            <li class="nav-item m-2 p-1">
+              <a class="nav-link active img-fluid p-2 " aria-current="page" href="#">
+                <img src="./img/amazon-logo.png" alt="logo" width="112">
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link text-white">
+                <span class="d-block position-relative" style="color: #CCCCCC; top: 6px; font-size: .8rem;"> Delivery to
+                  Bhopal 245865</span>
+                <span class="d-block fw-bold position-relative " style="font-size: .9rem"> <i
+                    class="bi bi-geo-alt position-absolute" style="left: -20px; top: -5px; font-size: 1.1rem;"></i>
+                  Update location</span>
+
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6  p-0">
+          <form action="">
+            <div class="input-group mt-2">
+              <button class="btn text-dark   dropdown-toggle rounded-start-1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="background-color: #D4D4D4; font-size: .8rem; padding: 10px;"> All </button>
+              <ul class="dropdown-menu search_dropdown overflow-y-scroll">
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">All Categories</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Alexa Skills</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Amazon Devices</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Amazon Fashion</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Amazon Pharmacy</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Appliances</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Apps &amp; Games</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Audible Audiobooks</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Baby</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Beauty</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Books</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Car &amp; Motorbike</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Clothing &amp; Accessories</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Collectibles</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Computers &amp; Accessories</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Deals</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Electronics</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Furniture</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Garden &amp; Outdoors</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Gift Cards</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Grocery &amp; Gourmet Foods</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Health &amp; Personal Care</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Home &amp; Kitchen</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Industrial &amp; Scientific</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Jewellery</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Kindle Store</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Luggage &amp; Bags</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Luxury Beauty</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Movies &amp; TV Shows</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">MP3 Music</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Music</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Musical Instruments</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Office Products</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Pet Supplies</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Prime Video</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Shoes &amp; Handbags</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Software</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Sports, Fitness &amp; Outdoors</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Subscribe &amp; Save</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Tools &amp; Home Improvement</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Toys &amp; Games</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Under ₹500</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Video Games</a></li>
+                <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Watches</a></li>
+              </ul>
+              <input type="text" placeholder="Search Amazon.in" class="form-control"
+                aria-label="Text input with dropdown button">
+              <button type="submit" class="input-group-text bg-warning "><i class="bi bi-search fw-bold"
+                  style="font-size: 1.2rem;"></i>
+            </div>
+        </div>
+        </form>
+        <div class="col-3" style="--bs-gutter-x: -6.5rem;">
+          <ul class="nav s_menu position-relative" style="font-size: 0.8rem; ">
+            <li class="nav-item pt-3 ">
+              <a class="nav-link text-white active" aria-current="page" href="#">
+                <span class="spritesheet d-inline-block"></span> <span class="fw-bold"></span>EN<i
+                  class="bi bi-caret-down-fill " style="font-size: 9px;"></i></a>
+              <span class="arrow-down d-block position-absolute" style="top: 42px; left: 49px;"></span>
+              <ul class="s_submenu position-absolute bg-white text-dark rounded-1 nav umenu">
+                <a href="#" class="nav-link text-secondary pt-3">
+                  <li class="nav-item border-0"><input type="radio" name="lg" /> English - EN</li>
+                </a>
+                <hr>
+                <a href="#" class="nav-link text-secondary">
+                  <li class="nav-item border-0"><input type="radio" name="lg" /> हिन्दी - HI</li>
+
+                </a>
+                <a href="#" class="nav-link text-secondary">
+                  <li class="nav-item border-0"><input type="radio" name="lg" /> தமிழ் - TA</li>
+
+                </a>
+                <a href="#" class="nav-link text-secondary">
+                  <li class="nav-item border-0"><input type="radio" name="lg" /> ಕನ್ನಡ - KN</li>
+
+                </a>
+                <a href="#" class="nav-link text-secondary">
+                  <li class="nav-item border-0"><input type="radio" name="lg" /> മലയാളം - ML</li>
+
+                </a>
+                <a href="#" class="nav-link text-secondary">
+                  <li class="nav-item border-0"><input type="radio" name="lg" /> বাংলা - BN</li>
+
+                </a>
+                <a href="#" class="nav-link text-secondary">
+                  <li class="nav-item border-0"><input type="radio" name="lg" /> मराठी - MR</li>
+
+                </a>
+                <a href="#" class="nav-link pt-0 ps-4">
+                  <li class="nav-item border-0">Learn more</li>
+                </a>
+              </ul>
+            </li>
+            <li class="nav-item pt-1">
+              <a class="nav-link text-white position-relative" href="#"><span>Hello, sign in</span><br> <span
+                  class="fw-bold">Account &
+                  Lists</span><i class="bi bi-caret-down-fill " style="font-size: 9px;"></i></a>
+              <span class="arrow-down d-block position-absolute" style="top: 50px; left: 185px;"></span>
+              <ul class="s_submenu position-relative  s_submenu2 position-absolute bg-white text-dark rounded-1 nav ">
+                <li class="nav-item s_tbdr h-25">A</li>
+                <li class="nav-item h-100">
+                  <div class="row h-100 m-0">
+                    <div class="col-6 p-0 s_tbdr h-75">
+                      <h5 class="ms-4 mt-2">Your Lists</h5>
+                      <ul class="nav flex-column p-0 ms-2 umenu">
+                        <li class="nav-item border-0 ">
+                          <a class="nav-link text-secondary pt-0 ps-3" aria-current="page" href="#">Create a Wish
+                            List</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">Wish from Any Website</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">Baby Wishlist</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">Discover Your Style</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">
+                            Explore Showroom</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-6 p-0 s_tbdr h-75">
+                      <h5 class="ms-4 mt-2">Your Account</h5>
+                      <ul class="nav flex-column p-0 ms-2 umenu">
+                        <li class="nav-item border-0 ">
+                          <a class="nav-link text-secondary pt-0  ps-3" aria-current="page" href="#">Your Account</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">Your Recommendations</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">Your Prime Membership</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">Your Prime Video</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">
+                            Your Subscribe & Save Items</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">
+                            Memberships & Subscriptions</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">
+                            Your Seller Account</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">
+                            Manage Your Content and Devices</a>
+                        </li>
+                        <li class="nav-item border-0">
+                          <a class="nav-link text-secondary pt-0 ps-3" href="#">
+                            Your Free Amazon Business Account</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item pt-1">
+              <a class="nav-link text-white" href="#"><span>Returns</span><br> <span class="fw-bold">& Orders</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white position-relative" href="#">
+                <span class="text-warning fw-bold position-absolute" style="top: 21px; left: 14px;">0</span><i
+                  class="bi bi-cart fs-2 position-absolute" style="left: 0px;"></i><span
+                  class="fw-bold fs-6 position-absolute" style="left: 30px; top: 22px;">Cart</span></a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+    <div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-white ps-4 fw-medium active" aria-current="page" href="#" data-bs-toggle="modal"
+            data-bs-target="#exampleModal"><i class="fa-solid fa-bars"></i> All</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white ps-1" href="#">Amazon miniTV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Best Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Today's Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Mobiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Prime</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Customer Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#"> Electronics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Fashion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">New Releases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ps-1" href="#">Home & Kitchen</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="s_tbdr">
+    <div class="container-fluid">
+      <div class="main_1">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/July/Unrec/3000/3._CB569386741_.jpg"
+                class="d-block w-100" alt="1">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2024/BAU/Hero/Unrec/D91435399_WLA-BAU-Unrec-Hero_DesktopTallHero_3000x1200._CB582928607_.jpg"
+                class="d-block w-100" alt="2">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg"
+                class="d-block w-100" alt="3">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/July/Unrec/3000/1._CB569386741_.jpg"
+                class="d-block w-100" alt="4">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg"
+                class="d-block w-100" alt="5">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/CookwareDining/Aman/Primeday24/5300---Kitchen-hero---BAU---update_3000X1200._CB569213170_.jpg"
+                class="d-block w-100" alt="8">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Media/BAU/D132995370_Homepage_DesktopHeroTemplate_3000x1200._CB557152260_.jpg"
+                class="d-block w-100" alt="7">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG24/Smart_Watches/MED_MAY/Tall_Hero_1500X600_BAU_NewLaunches._CB554931622_.jpg"
+                class="d-block w-100" alt="6">
+            </div>
+          </div>
+          <button class="carousel-control-prev rounded-1 s_slider_control" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next rounded-1 s_slider_control" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="main_2 container-fluid mb-3">
+        <div class="row m-0 h-100">
+          <div class="col">
+            <div class="bg-white h-100"></div>
+          </div>
+          <div class="col">
+            <div class="bg-white h-100"></div>
+          </div>
+          <div class="col">
+            <div class="bg-white h-100"></div>
+          </div>
+          <div class="col h-100">
+        <div class="bg-white mb-2 h-50"></div>
+        <div class="bg-white" style="height: 202px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ps-4 pe-4">
+        <div class="main_3 s_tbdr">
+          <div id="productLayout-1" class="carousel slide h-100">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+               <div class="bg-danger h-100">
+                <div class="row m-0 h-100">
+                  <div class="col s_tbdr p-0">A</div>
+                  <div class="col s_tbdr p-0">B</div>
+                  <div class="col s_tbdr p-0">C</div>
+                  <div class="col s_tbdr p-0">D</div>
+                  <div class="col s_tbdr p-0">E</div>
+                  <div class="col s_tbdr p-0">F</div>
+                  <div class="col s_tbdr p-0">G</div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item h-100">
+               <div class="bg-primary h-100">
+                <div class="row m-0 h-100">
+                  <div class="col s_tbdr p-0">h</div>
+                  <div class="col s_tbdr p-0">I</div>
+                  <div class="col s_tbdr p-0">J</div>
+                  <div class="col s_tbdr p-0">K</div>
+                  <div class="col s_tbdr p-0">L</div>
+                  <div class="col s_tbdr p-0">M</div>
+                  <div class="col s_tbdr p-0">N</div>
+                </div>
+               </div>
+              </div>
+              <div class="carousel-item h-100">
+               <div class="bg-warning h-100">
+                <div class="row m-0 h-100">
+                  <div class="col s_tbdr p-0">O</div>
+                  <div class="col s_tbdr p-0">P</div>
+                  <div class="col s_tbdr p-0">Q</div>
+                  <div class="col s_tbdr p-0">R</div>
+                  <div class="col s_tbdr p-0">S</div>
+                  <div class="col s_tbdr p-0">T</div>
+                  <div class="col s_tbdr p-0">U</div>
+                </div>
+               </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev prodctut_carousel bg-white top-50  translate-middle-y rounded-end" type="button" data-bs-target="#productLayout-1" data-bs-slide="prev" style="opacity: 1;">
+              <i class="fa-solid fa-chevron-left text-body-tertiary fs-3"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next prodctut_carousel bg-white top-50 translate-middle-y rounded-start" type="button" data-bs-target="#productLayout-1" data-bs-slide="next" style="opacity: 1;">
+              <i class="fa-solid fa-chevron-left text-body-tertiary fs-3"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="main_4 s_tbdr">main4</div>
+        <div class="main_5 s_tbdr">main5</div>
+        <div class="main_6 s_tbdr">main6</div>
+        <div class="main_7 s_tbdr">main7</div>
+        <div class="raw s_tbdr">
+          <div class="main_8 col-8 offset-2 s_tbdr">main8</div>
+        </div>
+        <div class="main_9 s_tbdr">main9</div>
+        <div class="main_10 s_tbdr">main10</div>
+        <div class="main_11 s_tbdr">main11</div>
+        <div class="main_12 s_tbdr">main12</div>
+      </div>
+      <div class="main_13 s_tbdr">main13</div>
+      </div>
+  </main>
+  <footer class="text-white text-center">
+    <div class="s_tbdr">A</div>
+    <div class="s_tbdr">B</div>
+    <div>
+      <div class="row m-0 s_footer_c1">
+        <div class="col-8 offset-2 s_tbdr">
+          <div class="row h-100">
+            <div class="col s_tbdr h-100">a</div>
+            <div class="col s_tbdr h-100">b</div>
+            <div class="col s_tbdr h-100">c</div>
+            <div class="col s_tbdr h-100">d</div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 s_footer_c2">
+        <div class="col-12 s_tbdr text-center">
+          <div><a href="#" class="btn btn-link">Conditions of Use & Sale</a>
+            <a href="#" class="btn btn-link"> Privacy Notice</a>
+            <a href="#" class="btn btn-link"> Interest-Based Ads</a>
+          </div>
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

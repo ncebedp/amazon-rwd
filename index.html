@@ -23,12 +23,12 @@
 
     header>div:first-child {
       background-color: #131921;
-      height: 60px;
+      min-height: 60px;
     }
 
-    header>div:last-child {
+    header>.s_bcMenu {
       background-color: #232F3E;
-      height: 39px;
+      min-height: 39px;
     }
 
 
@@ -118,11 +118,12 @@
     }
 
     .modal-content {
-      top: -30px;
-      left: -104%;
+      position: fixed;
+      top: 0;
+      left: 0;
       border-radius: 0px;
       height: 100vh;
-      width: 76%;
+      width: 24%;
 
     }
 
@@ -130,6 +131,8 @@
     .modal-header {
       background-color: #232F3E;
       height: 52px;
+      border-radius: 0px;
+
     }
 
     .modal-body {
@@ -224,6 +227,45 @@
     .prodctut_carousel{
       width: 45px;
       height: 100px;
+    }
+/* 576 sek width hone par work karegi */
+
+    @media only screen and (max-width: 575.98px) {
+.s_br{
+  border-top-left-radius: 5px!important;
+  border-bottom-left-radius: 5px!important;
+
+}
+
+
+.modal-content {
+        width: 80%;
+
+    }
+
+header>div:first-child{
+  background-color: #232F3E;
+}
+
+    }
+    @media only screen and (min-width: 576px) {
+.s_br{
+  border-top-left-radius: 0px!important;
+  border-bottom-left-radius: 0px!important;
+  
+}
+
+
+    }
+    @media only screen and (max-width:377.98px) {
+      .s_singin{
+        display: none;
+      }
+    }
+    @media only screen and (min-width:378px) {
+      .s_singin{
+        display: inline;
+      }
     }
   </style>
 </head>
@@ -328,15 +370,19 @@
   <header class="text-white">
     <div>
       <div class="row m-0 h-100">
-        <div class="col-3 p-0">
-
+        <div class="col-6   col-md-3 p-0">
           <ul class="nav h-100  ">
+            <!-- amzon logo ke side me hamburgar -->
+            <li class="nav-item d-md-block d-lg-none">
+              <a class="nav-link text-white p-0 ps-3 mt-3 fw-medium active" aria-current="page" href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"><i class="fa-solid fa-bars fa-xl"></i> </a>
+            </li>
             <li class="nav-item m-2 p-1">
               <a class="nav-link active img-fluid p-2 " aria-current="page" href="#">
                 <img src="./img/amazon-logo.png" alt="logo" width="112">
               </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item d-none d-sm-block d-sm-none d-lg-block">
               <a href="#" class="nav-link text-white">
                 <span class="d-block position-relative" style="color: #CCCCCC; top: 6px; font-size: .8rem;"> Delivery to
                   Bhopal 245865</span>
@@ -347,12 +393,22 @@
               </a>
             </li>
           </ul>
-
         </div>
-        <div class="col-6  p-0">
+        <div class="col-6 P-0 d-md-block d-lg-none clearfix">
+<ul class="nav float-end ">
+  <li class="nav-item "><a href="#" class="nav-link text-white p-0 "><span class="s_singin" style="font-size: 0.9rem;"> Sign in <i class="fa-solid fa-angle-right fa-2xs"></i></span> <span class=""><i class="bi bi-person fs-1 " ></i></span></a></li>
+  <li class="nav-item position-relative">
+    <a class="nav-link p-0 text-white  position-relative" href="#">
+      <span class="text-warning fw-bold position-absolute" style="top: 23%; left: 38%;">0</span><i
+        class="bi bi-cart " style="font-size: 2rem;" ></i></a>
+  </li>
+
+</ul>
+        </div>
+        <div class="col-12 col-md-6 ">
           <form action="">
-            <div class="input-group mt-2">
-              <button class="btn text-dark   dropdown-toggle rounded-start-1" type="button" data-bs-toggle="dropdown"
+          <div class="input-group mt-2">
+              <button class="btn text-dark d-none d-sm-block   dropdown-toggle rounded-start-1" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" style="background-color: #D4D4D4; font-size: .8rem; padding: 10px;"> All </button>
               <ul class="dropdown-menu search_dropdown overflow-y-scroll">
                 <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">All Categories</a></li>
@@ -400,21 +456,21 @@
                 <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Video Games</a></li>
                 <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Watches</a></li>
               </ul>
-              <input type="text" placeholder="Search Amazon.in" class="form-control"
+              <input type="text" placeholder="Search Amazon.in" class="form-control s_br"
                 aria-label="Text input with dropdown button">
-              <button type="submit" class="input-group-text bg-warning "><i class="bi bi-search fw-bold"
+              <button type="submit" class="input-group-text bg-warning"><i class="bi bi-search fw-bold"
                   style="font-size: 1.2rem;"></i>
             </div>
         </div>
         </form>
-        <div class="col-3" style="--bs-gutter-x: -6.5rem;">
-          <ul class="nav s_menu position-relative" style="font-size: 0.8rem; ">
+        <div class="col-12 col-md-3 d-none d-sm-inline-block">
+          <ul class="nav  s_menu position-relative " style="font-size: 0.8rem; ">
             <li class="nav-item pt-3 ">
               <a class="nav-link text-white active" aria-current="page" href="#">
                 <span class="spritesheet d-inline-block"></span> <span class="fw-bold"></span>EN<i
                   class="bi bi-caret-down-fill " style="font-size: 9px;"></i></a>
               <span class="arrow-down d-block position-absolute" style="top: 42px; left: 49px;"></span>
-              <ul class="s_submenu position-absolute bg-white text-dark rounded-1 nav umenu">
+              <ul class="s_submenu position-absolute bg-white text-dark rounded-1 nav umenu ">
                 <a href="#" class="nav-link text-secondary pt-3">
                   <li class="nav-item border-0"><input type="radio" name="lg" /> English - EN</li>
                 </a>
@@ -448,12 +504,12 @@
                 </a>
               </ul>
             </li>
-            <li class="nav-item pt-1">
+            <li class="nav-item pt-1 ">
               <a class="nav-link text-white position-relative" href="#"><span>Hello, sign in</span><br> <span
                   class="fw-bold">Account &
                   Lists</span><i class="bi bi-caret-down-fill " style="font-size: 9px;"></i></a>
               <span class="arrow-down d-block position-absolute" style="top: 50px; left: 185px;"></span>
-              <ul class="s_submenu position-relative  s_submenu2 position-absolute bg-white text-dark rounded-1 nav ">
+              <ul class="s_submenu  position-relative  s_submenu2 position-absolute bg-white text-dark rounded-1 nav ">
                 <li class="nav-item s_tbdr h-25">A</li>
                 <li class="nav-item h-100">
                   <div class="row h-100 m-0">
@@ -535,53 +591,81 @@
         </div>
       </div>
     </div>
-    <div>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link text-white ps-4 fw-medium active" aria-current="page" href="#" data-bs-toggle="modal"
-            data-bs-target="#exampleModal"><i class="fa-solid fa-bars"></i> All</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white ps-1" href="#">Amazon miniTV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Sell</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Best Sellers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Today's Deals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Mobiles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Prime</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Customer Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#"> Electronics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Fashion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">New Releases</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white ps-1" href="#">Home & Kitchen</a>
-        </li>
-      </ul>
+    <div class="s_bcMenu ">
+      <div class="d-none d-sm-block">
+        <ul class="nav">
+          <li class="nav-item d-none d-sm-inline-block">
+            <a class="nav-link text-white ps-4 fw-medium active" aria-current="page" href="#" data-bs-toggle="modal"
+              data-bs-target="#exampleModal"><i class="fa-solid fa-bars"></i> All</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white ps-1" href="#">Amazon miniTV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Sell</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Best Sellers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Today's Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Mobiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Prime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Customer Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#"> Electronics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Fashion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">New Releases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-1" href="#">Home & Kitchen</a>
+          </li>
+        </ul>
+      </div>
+      <!-- screen size less then 576  -->
+   <div class="d-inline-block d-sm-none">
+    <ul class="nav ps-2 pb-2">
+      <li class="nav-item ">
+        <a class="nav-link text-white pt-0" href="#" style="line-height: 1;"><span style="font-size: 0.7rem;">Shop by </span><span class="d-block">Category</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#">Your Lists</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#">Deals</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#">Sell</a>
+      </li>
+    </ul>
+   </div>
+      <!-- screen size less then 576  -->
     </div>
+<div style="background-color: #37475A;min-height: 45px;" class="d-block d-sm-none ">
+  <div class="pt-2 ps-2  text-white">
+    <a href="" class="nav-link">
+    <i class="bi bi-geo-alt"></i> Delivering to Meerut 250002 - Update location ⌵
+    </a>
+  </div>
+</div>
+
   </header>
 
   <main class="s_tbdr">
     <div class="container-fluid">
-      <div class="main_1">
-        <div id="carouselExample" class="carousel slide">
+      <div class="main_1 ">
+        <div id="carouselExample" class="carousel slide ">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -592,6 +676,11 @@
               <img
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2024/BAU/Hero/Unrec/D91435399_WLA-BAU-Unrec-Hero_DesktopTallHero_3000x1200._CB582928607_.jpg"
                 class="d-block w-100" alt="2">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2024/BAU/Hero/Unrec/D91435399_WLA-BAU-Unrec-Hero_DesktopTallHero_3000x1200._CB582928607_.jpg"
+                class="d-block w-100" alt="2">dd
             </div>
             <div class="carousel-item">
               <img
@@ -654,46 +743,115 @@
         </div>
       </div>
       <div class="ps-4 pe-4">
-        <div class="main_3 s_tbdr">
+        <div class="main_3 mb-4">
           <div id="productLayout-1" class="carousel slide h-100">
             <div class="carousel-inner h-100">
               <div class="carousel-item active h-100">
-               <div class="bg-danger h-100">
-                <div class="row m-0 h-100">
-                  <div class="col s_tbdr p-0">A</div>
-                  <div class="col s_tbdr p-0">B</div>
-                  <div class="col s_tbdr p-0">C</div>
-                  <div class="col s_tbdr p-0">D</div>
-                  <div class="col s_tbdr p-0">E</div>
-                  <div class="col s_tbdr p-0">F</div>
-                  <div class="col s_tbdr p-0">G</div>
+               <div class="bg-white h-100 ">
+                 <h5 class="pt-3 ms-3  fw-bold"><span>Best Sellers in Clothing & Accessories</span></h5>
+                <div class="row m-0 h-100 ">
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/81MfjxIbRsL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center  ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61ar9UQv1rL._AC_SY200_.jpg" class=" h-100 " alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/71WBVg0YE8L._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/610IIi6wHuL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61nCJ7mqXFL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/51Clvs6gtYL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/51WHQvSNLFL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/515EGqSIXiS._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
+                  <div class="col  p-3 mb-5 text-center ">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61aqw28w9XL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                  </div>
                 </div>
               </div>
               </div>
               <div class="carousel-item h-100">
-               <div class="bg-primary h-100">
-                <div class="row m-0 h-100">
-                  <div class="col s_tbdr p-0">h</div>
-                  <div class="col s_tbdr p-0">I</div>
-                  <div class="col s_tbdr p-0">J</div>
-                  <div class="col s_tbdr p-0">K</div>
-                  <div class="col s_tbdr p-0">L</div>
-                  <div class="col s_tbdr p-0">M</div>
-                  <div class="col s_tbdr p-0">N</div>
-                </div>
+                <div class="bg-white h-100 ">
+                  <h5 class="pt-3 ms-3  fw-bold"><span>Best Sellers in Clothing & Accessories</span></h5>
+                 <div class="row m-0 h-100 ">
+                   <div class="col pt-3 text-center p-3 ps-4 ">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/81TRdxk1wnL._AC_SY200_.jpg" class=" h-100 " alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/51NSC2qvOxL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/71x4rLhMkML._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/713n+TxyfCL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/71BLkd39VKL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/71eUwDk8z+L._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/61GWXb1SgjL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/61D7nbhylBL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/81MfjxIbRsL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="" class=" h-100" alt=""></a>
+                   </div>
+                 </div>
                </div>
               </div>
               <div class="carousel-item h-100">
-               <div class="bg-warning h-100">
-                <div class="row m-0 h-100">
-                  <div class="col s_tbdr p-0">O</div>
-                  <div class="col s_tbdr p-0">P</div>
-                  <div class="col s_tbdr p-0">Q</div>
-                  <div class="col s_tbdr p-0">R</div>
-                  <div class="col s_tbdr p-0">S</div>
-                  <div class="col s_tbdr p-0">T</div>
-                  <div class="col s_tbdr p-0">U</div>
-                </div>
+                <div class="bg-white h-100 ">
+                  <h5 class="pt-3 ms-3  fw-bold"><span>Best Sellers in Clothing & Accessories</span></h5>
+                 <div class="row m-0 h-100 ">
+                   <div class="col pt-3 text-center p-3 ps-4 ">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/81TRdxk1wnL._AC_SY200_.jpg" class=" h-100 " alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/51NSC2qvOxL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/71x4rLhMkML._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/713n+TxyfCL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/71BLkd39VKL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/71eUwDk8z+L._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/61GWXb1SgjL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/61D7nbhylBL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="https://m.media-amazon.com/images/I/81MfjxIbRsL._AC_SY200_.jpg" class=" h-100" alt=""></a>
+                   </div>
+                   <div class="col pt-3 text-center p-3 ps-4">
+                     <a href="#"><img src="" class=" h-100" alt=""></a>
+                   </div>
+                 </div>
                </div>
               </div>
             </div>

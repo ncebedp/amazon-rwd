@@ -73,7 +73,7 @@
     .main_7 {
       min-height: 380px;
     }
-    
+
     .main_5,
     .main_11 {
       height: 425px;
@@ -224,56 +224,62 @@
 
     }
 
-    .prodctut_carousel{
+    .prodctut_carousel {
       width: 45px;
       height: 100px;
     }
-/* 576 sek width hone par work karegi */
+
+    /* 576 sek width hone par work karegi */
 
     @media only screen and (max-width: 575.98px) {
-.s_br{
-  border-top-left-radius: 5px!important;
-  border-bottom-left-radius: 5px!important;
+      .s_br {
+        border-top-left-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;
 
-}
+      }
 
 
-.modal-content {
+      .modal-content {
         width: 80%;
 
+      }
+
+      header>div:first-child {
+        background-color: #232F3E;
+      }
+
     }
 
-header>div:first-child{
-  background-color: #232F3E;
-}
-
-    }
     @media only screen and (min-width: 576px) {
-.s_br{
-  border-top-left-radius: 0px!important;
-  border-bottom-left-radius: 0px!important;
-  
-}
+      .s_br {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+
+      }
 
 
     }
+
     @media only screen and (max-width:377.98px) {
-      .s_singin{
+      .s_singin {
         display: none;
       }
     }
+
     @media only screen and (min-width:378px) {
-      .s_singin{
+      .s_singin {
         display: inline;
       }
     }
 
     .s_seealldetails:hover {
-      color: #D2511F!important;
+      color: #D2511F !important;
 
     }
 
-
+    .s_budget {
+      font-size: 0.8rem;
+    }
   </style>
 </head>
 
@@ -381,8 +387,8 @@ header>div:first-child{
           <ul class="nav h-100  ">
             <!-- amzon logo ke side me hamburgar -->
             <li class="nav-item d-md-block d-lg-none">
-              <a class="nav-link text-white p-0 ps-3 mt-3 fw-medium active" aria-current="page" href="#" data-bs-toggle="modal"
-                data-bs-target="#exampleModal"><i class="fa-solid fa-bars fa-xl"></i> </a>
+              <a class="nav-link text-white p-0 ps-3 mt-3 fw-medium active" aria-current="page" href="#"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-bars fa-xl"></i> </a>
             </li>
             <li class="nav-item m-2 p-1">
               <a class="nav-link active img-fluid p-2 " aria-current="page" href="#">
@@ -402,21 +408,24 @@ header>div:first-child{
           </ul>
         </div>
         <div class="col-6 P-0 d-md-block d-lg-none clearfix">
-<ul class="nav float-end ">
-  <li class="nav-item "><a href="#" class="nav-link text-white p-0 "><span class="s_singin" style="font-size: 0.9rem;"> Sign in <i class="fa-solid fa-angle-right fa-2xs"></i></span> <span class=""><i class="bi bi-person fs-1 " ></i></span></a></li>
-  <li class="nav-item position-relative">
-    <a class="nav-link p-0 text-white  position-relative" href="#">
-      <span class="text-warning fw-bold position-absolute" style="top: 23%; left: 38%;">0</span><i
-        class="bi bi-cart " style="font-size: 2rem;" ></i></a>
-  </li>
+          <ul class="nav float-end ">
+            <li class="nav-item "><a href="#" class="nav-link text-white p-0 "><span class="s_singin"
+                  style="font-size: 0.9rem;"> Sign in <i class="fa-solid fa-angle-right fa-2xs"></i></span> <span
+                  class=""><i class="bi bi-person fs-1 "></i></span></a></li>
+            <li class="nav-item position-relative">
+              <a class="nav-link p-0 text-white  position-relative" href="#">
+                <span class="text-warning fw-bold position-absolute" style="top: 23%; left: 38%;">0</span><i
+                  class="bi bi-cart " style="font-size: 2rem;"></i></a>
+            </li>
 
-</ul>
+          </ul>
         </div>
         <div class="col-12 col-md-6 ">
           <form action="">
-          <div class="input-group mt-2">
-              <button class="btn text-dark d-none d-sm-block   dropdown-toggle rounded-start-1" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false" style="background-color: #D4D4D4; font-size: .8rem; padding: 10px;"> All </button>
+            <div class="input-group mt-2">
+              <button class="btn text-dark d-none d-sm-block   dropdown-toggle rounded-start-1" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: #D4D4D4; font-size: .8rem; padding: 10px;"> All </button>
               <ul class="dropdown-menu search_dropdown overflow-y-scroll">
                 <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">All Categories</a></li>
                 <li> <a class="dropdown-item pt-0 pb-0 ps-1" href="#">Alexa Skills</a></li>
@@ -641,31 +650,32 @@ header>div:first-child{
         </ul>
       </div>
       <!-- screen size less then 576  -->
-   <div class="d-inline-block d-sm-none">
-    <ul class="nav ps-2 pb-2">
-      <li class="nav-item ">
-        <a class="nav-link text-white pt-0" href="#" style="line-height: 1;"><span style="font-size: 0.7rem;">Shop by </span><span class="d-block">Category</span></a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link text-white" href="#">Your Lists</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link text-white" href="#">Deals</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link text-white" href="#">Sell</a>
-      </li>
-    </ul>
-   </div>
+      <div class="d-inline-block d-sm-none">
+        <ul class="nav ps-2 pb-2">
+          <li class="nav-item ">
+            <a class="nav-link text-white pt-0" href="#" style="line-height: 1;"><span style="font-size: 0.7rem;">Shop
+                by </span><span class="d-block">Category</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Your Lists</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Deals</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Sell</a>
+          </li>
+        </ul>
+      </div>
       <!-- screen size less then 576  -->
     </div>
-<div style="background-color: #37475A;min-height: 45px;" class="d-block d-sm-none ">
-  <div class="pt-2 ps-2  text-white">
-    <a href="" class="nav-link">
-    <i class="bi bi-geo-alt"></i> Delivering to Meerut 250002 - Update location ⌵
-    </a>
-  </div>
-</div>
+    <div style="background-color: #37475A;min-height: 45px;" class="d-block d-sm-none ">
+      <div class="pt-2 ps-2  text-white">
+        <a href="" class="nav-link">
+          <i class="bi bi-geo-alt"></i> Delivering to Meerut 250002 - Update location ⌵
+        </a>
+      </div>
+    </div>
 
   </header>
 
@@ -736,697 +746,904 @@ header>div:first-child{
         <div class="row m-0 h-100">
           <div class="col p-0">
             <div class="bg-white h-100">
-              <h5 class="pt-4 ps-3 fw-bold">Up to 65% off | Televisions</h5>
-              <div class="row m-0 h-50">
-                <!-- <div class="col">
-                  <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/32_inch_PC_QC_186x116._SY116_CB568213197_.jpg" class="img-fluid " alt="" style="height: 60%;">
-                </div> -->
-                <!-- <div class="col">
-                  <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/43_inch_PC_QC_186x116._SY116_CB568213197_.jpg" class="img-fluid " alt="" style="height: 60%;">
-                </div> -->
+              <h5 class="pt-4 ps-3 fw-bold">Minimum 50% off | Home,<br /> kitchen & more</h5>
+              <div class="row m-0" style="height: 36%;">
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Aug24_OHL/PC_1x_kitchen._SY116_CB566465041_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">Kitchen essentails</small>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Aug24_OHL/PC_1x_home._SY116_CB566465041_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">Home Decor</small>
+                  </a>
+                </div>
               </div>
-              <div class="row m-0 h-50">
-                <!-- <div class="col">
-                  <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/32_inch_PC_QC_186x116._SY116_CB568213197_.jpg" class="img-fluid " alt="" style="height: 60%;">
-                </div> -->
-                <!-- <div class="col">
-                  <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/43_inch_PC_QC_186x116._SY116_CB568213197_.jpg" class="img-fluid " alt="" style="height: 60%;">
-                </div> -->
+              <div class="row m-0" style="height: 43%;">
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Aug24_OHL/PC_1x_fur._SY116_CB566465041_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">Furniture</small>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Aug24_OHL/PC_1x_hi._SY116_CB566465041_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">Home improvement</small>
+                  </a>
+                </div>
+                <a href="#" class="text-success text-decoration-none s_seealldetails" style="font-size: 0.8rem;">See all
+                  deals</a>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="bg-white h-100"></div>
+            <div class="bg-white h-100">
+              <h5 class="pt-4 ps-3 fw-bold">Up to 65% off | Televisions</h5>
+              <div class="row m-0" style="height: 43%;">
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/32_inch_PC_QC_186x116._SY116_CB568213197_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">Budget TVs | Starting ₹6,999</small>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/43_inch_PC_QC_186x116._SY116_CB568213197_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">4K TVs | Up to 12 months No Cost EMI </small>
+                  </a>
+                </div>
+              </div>
+              <div class="row m-0" style="height: 43%;">
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/32_inch_PC_QC_186x116._SY116_CB568213197_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">Budget TVs | Starting ₹6,999</small>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="nav-link ">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/TVs/nikita/AA/MSO/Size/PC/43_inch_PC_QC_186x116._SY116_CB568213197_.jpg"
+                      class="img-fluid " alt="">
+                    <small class="s_budget">4K TVs | Up to 12 months No Cost EMI </small>
+                  </a>
+                </div>
+                <a href="#" class="text-success text-decoration-none s_seealldetails" style="font-size: 0.8rem;">See all
+                  deals</a>
+              </div>
+            </div>
           </div>
           <div class="col">
-            <div class="bg-white h-100"></div>
+            <div class="bg-white h-100  " style="font-size: 0.8rem; line-height: 0;">
+              <h5 class="pt-4 ps-3 fw-bold">Great Freedom Sale | Shop now</h5>
+              <div class="row m-3 h-75 ">
+                <div class="col p-0 " style="height: 95%;">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/AugART24/GW/MainEventDATES/AugART24_GW_PC_CC_Event_1x_V2._SY304_CB566707753_.jpg"
+                    alt="" class="img-fluid h-100">
+                </div>
+              </div>
+              <span class="d-inline-block ms-3">
+                <a href="#" class="text-success text-decoration-none s_seealldetails"
+                  style="font-size: 0.8rem; line-height: 0;">See all deals</a>
+
+              </span>
+            </div>
           </div>
           <div class="col h-100">
-        <div class="bg-white mb-2 h-50"></div>
-        <div class="bg-white" style="height: 202px;"></div>
+            <div class="bg-white mb-4" style="height: 150px;">
+              <h4 class="ps-3 pt-3 fw-bold">Sign in for your best experience</h4>
+              <button class="btn btn-warning ms-4  rounded-5 mt-2" type="button" style="width: 86%; font-size: 0.8rem;">Sing In Securely</button>
+            </div>
+            <div class="bg-white" style="height: 247px;">
+              <div class="row m-0">
+                <div class="col">
+                  <span class="d-inline-block ms-4 fs-3" style="margin-top: 65px;"><span class="fw-bold fst-italic">type</span><span>case --pending work</span></span>
+              <img src="https://m.media-amazon.com/images/I/71ZUpB-byDL._SX679_.jpg" alt="" class="float-end mt-4 me-3" style="width: 40%;">
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="ps-4 pe-4">
-        <div class="main_3 bg-white mb-4"><h5 class="d-inline-block ms-3 mt-3 me-3">Blockbuster deals</h5> <a href="#" class="text-success text-decoration-none s_seealldetails" >See all deals</a>
+        <div class="main_3 bg-white mb-4">
+          <h5 class="d-inline-block ms-3 mt-3 me-3">Blockbuster deals</h5> <a href="#"
+            class="text-success text-decoration-none s_seealldetails">See all deals</a>
           <div id="main3_productid3" class="carousel slide h-100">
             <div class="carousel-inner h-100">
-              <div class="carousel-item active h-100" >
+              <div class="carousel-item active h-100">
                 <div class="row mt-3 ms-2">
                   <div class="col-6 col-md ">
-                    <img src="https://m.media-amazon.com/images/I/31qx8K0wm+L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-                 <div class="mt-2"> <a href="#" class="text-decoration-none">
-                  <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                  <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-                </div>
-                 <div>
-                  <a href="#" class="nav-link">
-                 <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small class="text-decoration-line-through">₹30,335.00</small></span>
-                  </a>
-                </div>
-                 <div>
-                <a href="#" class="nav-link">
-                  <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-                </a>
-                </div>
-                </div>
-                <div class="col-6 col-md ">
-                  <img src="https://m.media-amazon.com/images/I/415gV21fNCL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-               <div class="mt-2"> <a href="#" class="text-decoration-none">
-                <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-              </div>
-               <div>
-                <a href="#" class="nav-link">
-               <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-                </a>
-              </div>
-               <div>
-              <a href="#" class="nav-link">
-                <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-              </a>
-              </div>
-              </div>
-              <div class="col-6 col-md ">
-                <img src="https://m.media-amazon.com/images/I/41HaxHdIjjL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-             <div class="mt-2"> <a href="#" class="text-decoration-none">
-              <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-              <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-            </div>
-             <div>
-              <a href="#" class="nav-link">
-             <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-              </a>
-            </div>
-             <div>
-            <a href="#" class="nav-link">
-              <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-            </a>
-            </div>
-            </div>
-            <div class="col-6 col-md ">
-              <img src="https://m.media-amazon.com/images/I/4143CSktumL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-           <div class="mt-2"> <a href="#" class="text-decoration-none">
-            <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-            <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-          </div>
-           <div>
-            <a href="#" class="nav-link">
-           <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-            </a>
-          </div>
-           <div>
-          <a href="#" class="nav-link">
-            <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-          </a>
-          </div>
-          </div>
-          <div class="col-6 col-md ">
-            <img src="https://m.media-amazon.com/images/I/41A8MP9gFAL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-         <div class="mt-2"> <a href="#" class="text-decoration-none">
-          <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-          <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-        </div>
-         <div>
-          <a href="#" class="nav-link">
-         <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-          </a>
-        </div>
-         <div>
-        <a href="#" class="nav-link">
-          <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-        </a>
-        </div>
-        </div>
-        <div class="col-6 col-md ">
-          <img src="https://m.media-amazon.com/images/I/41GGOjbmEyL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-       <div class="mt-2"> <a href="#" class="text-decoration-none">
-        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-      </div>
-       <div>
-        <a href="#" class="nav-link">
-       <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-        </a>
-      </div>
-       <div>
-      <a href="#" class="nav-link">
-        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-      </a>
-      </div>
-      </div>
-                </div>
-              </div>
-              <div class="carousel-item h-100" >
-                <div class="row mt-3 ms-2">
+                    <img src="https://m.media-amazon.com/images/I/31qx8K0wm+L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹30,335.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
                   <div class="col-6 col-md ">
-                    <img src="https://m.media-amazon.com/images/I/41GGOjbmEyL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-                 <div class="mt-2"> <a href="#" class="text-decoration-none">
-                  <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                  <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-                </div>
-                 <div>
-                  <a href="#" class="nav-link">
-                 <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small class="text-decoration-line-through">₹30,335.00</small></span>
-                  </a>
-                </div>
-                 <div>
-                <a href="#" class="nav-link">
-                  <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-                </a>
-                </div>
-                </div>
-                <div class="col-6 col-md ">
-                  <img src="https://m.media-amazon.com/images/I/41W4RZICp7L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-               <div class="mt-2"> <a href="#" class="text-decoration-none">
-                <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-              </div>
-               <div>
-                <a href="#" class="nav-link">
-               <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-                </a>
-              </div>
-               <div>
-              <a href="#" class="nav-link">
-                <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-              </a>
-              </div>
-              </div>
-              <div class="col-6 col-md ">
-                <img src="https://m.media-amazon.com/images/I/31hXqtvutdL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-             <div class="mt-2"> <a href="#" class="text-decoration-none">
-              <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-              <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-            </div>
-             <div>
-              <a href="#" class="nav-link">
-             <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-              </a>
-            </div>
-             <div>
-            <a href="#" class="nav-link">
-              <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-            </a>
-            </div>
-            </div>
-            <div class="col-6 col-md ">
-              <img src="https://m.media-amazon.com/images/I/41eRbZPyRqL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-           <div class="mt-2"> <a href="#" class="text-decoration-none">
-            <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-            <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-          </div>
-           <div>
-            <a href="#" class="nav-link">
-           <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-            </a>
-          </div>
-           <div>
-          <a href="#" class="nav-link">
-            <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-          </a>
-          </div>
-          </div>
-          <div class="col-6 col-md ">
-            <img src="https://m.media-amazon.com/images/I/31V3lrjd9YL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-         <div class="mt-2"> <a href="#" class="text-decoration-none">
-          <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-          <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-        </div>
-         <div>
-          <a href="#" class="nav-link">
-         <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-          </a>
-        </div>
-         <div>
-        <a href="#" class="nav-link">
-          <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-        </a>
-        </div>
-        </div>
-        <div class="col-6 col-md ">
-          <img src="https://m.media-amazon.com/images/I/41Bmui2T3TL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-       <div class="mt-2"> <a href="#" class="text-decoration-none">
-        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-      </div>
-       <div>
-        <a href="#" class="nav-link">
-       <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-        </a>
-      </div>
-       <div>
-      <a href="#" class="nav-link">
-        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-      </a>
-      </div>
-      </div>
+                    <img src="https://m.media-amazon.com/images/I/415gV21fNCL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41HaxHdIjjL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/4143CSktumL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41A8MP9gFAL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41GGOjbmEyL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item h-100">
                 <div class="row mt-3 ms-2">
                   <div class="col-6 col-md ">
-                    <img src="https://m.media-amazon.com/images/I/41Bmui2T3TL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-                 <div class="mt-2"> <a href="#" class="text-decoration-none">
-                  <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                  <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    <img src="https://m.media-amazon.com/images/I/41GGOjbmEyL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹30,335.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41W4RZICp7L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/31hXqtvutdL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41eRbZPyRqL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/31V3lrjd9YL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41Bmui2T3TL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                 <div>
-                  <a href="#" class="nav-link">
-                 <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small class="text-decoration-line-through">₹30,335.00</small></span>
-                  </a>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="row mt-3 ms-2">
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41Bmui2T3TL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹30,335.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/314kVw1vC6L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41olG+V0K-L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/31qVIrbLqJL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/418tFshxkJL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41fFl0wqGjL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                 <div>
-                <a href="#" class="nav-link">
-                  <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-                </a>
-                </div>
-                </div>
-                <div class="col-6 col-md ">
-                  <img src="https://m.media-amazon.com/images/I/314kVw1vC6L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-               <div class="mt-2"> <a href="#" class="text-decoration-none">
-                <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-              </div>
-               <div>
-                <a href="#" class="nav-link">
-               <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-                </a>
-              </div>
-               <div>
-              <a href="#" class="nav-link">
-                <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-              </a>
-              </div>
-              </div>
-              <div class="col-6 col-md ">
-                <img src="https://m.media-amazon.com/images/I/41olG+V0K-L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-             <div class="mt-2"> <a href="#" class="text-decoration-none">
-              <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-              <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-            </div>
-             <div>
-              <a href="#" class="nav-link">
-             <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-              </a>
-            </div>
-             <div>
-            <a href="#" class="nav-link">
-              <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-            </a>
-            </div>
-            </div>
-            <div class="col-6 col-md ">
-              <img src="https://m.media-amazon.com/images/I/31qVIrbLqJL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-           <div class="mt-2"> <a href="#" class="text-decoration-none">
-            <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-            <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-          </div>
-           <div>
-            <a href="#" class="nav-link">
-           <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-            </a>
-          </div>
-           <div>
-          <a href="#" class="nav-link">
-            <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-          </a>
-          </div>
-          </div>
-          <div class="col-6 col-md ">
-            <img src="https://m.media-amazon.com/images/I/418tFshxkJL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-         <div class="mt-2"> <a href="#" class="text-decoration-none">
-          <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-          <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-        </div>
-         <div>
-          <a href="#" class="nav-link">
-         <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-          </a>
-        </div>
-         <div>
-        <a href="#" class="nav-link">
-          <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-        </a>
-        </div>
-        </div>
-        <div class="col-6 col-md ">
-          <img src="https://m.media-amazon.com/images/I/41fFl0wqGjL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-       <div class="mt-2"> <a href="#" class="text-decoration-none">
-        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-      </div>
-       <div>
-        <a href="#" class="nav-link">
-       <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-        </a>
-      </div>
-       <div>
-      <a href="#" class="nav-link">
-        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-      </a>
-      </div>
-      </div>
-                </div>
               </div>
             </div>
-            <button class="carousel-control-prev prodctut_carousel bg-white d-none d-sm-block   translate-middle-y rounded-end s_slider_control" type="button" data-bs-target="#main3_productid3" data-bs-slide="prev" style="top: 40%;">
+            <button
+              class="carousel-control-prev prodctut_carousel bg-white d-none d-sm-block   translate-middle-y rounded-end s_slider_control"
+              type="button" data-bs-target="#main3_productid3" data-bs-slide="prev" style="top: 40%;">
               <i class="fa-solid fa-chevron-left text-body-tertiary fs-3"></i>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next prodctut_carousel bg-white d-none d-sm-block   translate-middle-y rounded-start s_slider_control" type="button" data-bs-target="#main3_productid3" data-bs-slide="next" style="top: 40%;">
+            <button
+              class="carousel-control-next prodctut_carousel bg-white d-none d-sm-block   translate-middle-y rounded-start s_slider_control"
+              type="button" data-bs-target="#main3_productid3" data-bs-slide="next" style="top: 40%;">
               <i class="fa-solid fa-chevron-right text-body-tertiary fs-3"></i>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-        <div class="main_4 bg-white"><h5 class="d-inline-block ms-3 mt-3 me-3">8PM deals</h5> <a href="#" class="text-success text-decoration-none s_seealldetails" >See all deals</a>
+        <div class="main_4 bg-white">
+          <h5 class="d-inline-block ms-3 mt-3 me-3">8PM deals</h5> <a href="#"
+            class="text-success text-decoration-none s_seealldetails">See all deals</a>
           <div id="main4_productid3" class="carousel slide h-100">
             <div class="carousel-inner h-100">
               <div class="carousel-item active h-100" data-bs-interval="3000">
                 <div class="row mt-3 ms-2">
                   <div class="col-6 col-md ">
-                    <img src="https://m.media-amazon.com/images/I/41tps1-sn4L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-                 <div class="mt-2"> <a href="#" class="text-decoration-none">
-                  <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                  <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-                </div>
-                 <div>
-                  <a href="#" class="nav-link">
-                 <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small class="text-decoration-line-through">₹30,335.00</small></span>
-                  </a>
-                </div>
-                 <div>
-                <a href="#" class="nav-link">
-                  <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-                </a>
-                </div>
-                </div>
-                <div class="col-6 col-md ">
-                  <img src="https://m.media-amazon.com/images/I/319Xyt7X8wL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-               <div class="mt-2"> <a href="#" class="text-decoration-none">
-                <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-              </div>
-               <div>
-                <a href="#" class="nav-link">
-               <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-                </a>
-              </div>
-               <div>
-              <a href="#" class="nav-link">
-                <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-              </a>
-              </div>
-              </div>
-              <div class="col-6 col-md ">
-                <img src="https://m.media-amazon.com/images/I/419OkBj3+RL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-             <div class="mt-2"> <a href="#" class="text-decoration-none">
-              <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-              <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-            </div>
-             <div>
-              <a href="#" class="nav-link">
-             <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-              </a>
-            </div>
-             <div>
-            <a href="#" class="nav-link">
-              <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-            </a>
-            </div>
-            </div>
-            <div class="col-6 col-md ">
-              <img src="https://m.media-amazon.com/images/I/41SxOrMg7KL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-           <div class="mt-2"> <a href="#" class="text-decoration-none">
-            <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-            <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-          </div>
-           <div>
-            <a href="#" class="nav-link">
-           <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-            </a>
-          </div>
-           <div>
-          <a href="#" class="nav-link">
-            <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-          </a>
-          </div>
-          </div>
-          <div class="col-6 col-md ">
-            <img src="https://m.media-amazon.com/images/I/31fAITaT6rL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-         <div class="mt-2"> <a href="#" class="text-decoration-none">
-          <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-          <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-        </div>
-         <div>
-          <a href="#" class="nav-link">
-         <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-          </a>
-        </div>
-         <div>
-        <a href="#" class="nav-link">
-          <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-        </a>
-        </div>
-        </div>
-        <div class="col-6 col-md ">
-          <img src="https://m.media-amazon.com/images/I/41ogrWDMwuL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-       <div class="mt-2"> <a href="#" class="text-decoration-none">
-        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-      </div>
-       <div>
-        <a href="#" class="nav-link">
-       <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-        </a>
-      </div>
-       <div>
-      <a href="#" class="nav-link">
-        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-      </a>
-      </div>
-      </div>
+                    <img src="https://m.media-amazon.com/images/I/41tps1-sn4L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹30,335.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/319Xyt7X8wL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/419OkBj3+RL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41SxOrMg7KL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/31fAITaT6rL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41ogrWDMwuL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item h-100">
                 <div class="row mt-3 ms-2">
                   <div class="col-6 col-md ">
-                    <img src="https://m.media-amazon.com/images/I/41ogrWDMwuL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-                 <div class="mt-2"> <a href="#" class="text-decoration-none">
-                  <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                  <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-                </div>
-                 <div>
-                  <a href="#" class="nav-link">
-                 <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small class="text-decoration-line-through">₹30,335.00</small></span>
-                  </a>
-                </div>
-                 <div>
-                <a href="#" class="nav-link">
-                  <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-                </a>
-                </div>
-                </div>
-                <div class="col-6 col-md ">
-                  <img src="https://m.media-amazon.com/images/I/31QeINr6IOL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-               <div class="mt-2"> <a href="#" class="text-decoration-none">
-                <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-              </div>
-               <div>
-                <a href="#" class="nav-link">
-               <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-                </a>
-              </div>
-               <div>
-              <a href="#" class="nav-link">
-                <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-              </a>
-              </div>
-              </div>
-              <div class="col-6 col-md ">
-                <img src="https://m.media-amazon.com/images/I/51mDn89POcL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-             <div class="mt-2"> <a href="#" class="text-decoration-none">
-              <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-              <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-            </div>
-             <div>
-              <a href="#" class="nav-link">
-             <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-              </a>
-            </div>
-             <div>
-            <a href="#" class="nav-link">
-              <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-            </a>
-            </div>
-            </div>
-            <div class="col-6 col-md ">
-              <img src="https://m.media-amazon.com/images/I/61PTHa2PThL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-           <div class="mt-2"> <a href="#" class="text-decoration-none">
-            <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-            <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-          </div>
-           <div>
-            <a href="#" class="nav-link">
-           <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-            </a>
-          </div>
-           <div>
-          <a href="#" class="nav-link">
-            <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-          </a>
-          </div>
-          </div>
-          <div class="col-6 col-md ">
-            <img src="https://m.media-amazon.com/images/I/31lZQVA7ucL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-         <div class="mt-2"> <a href="#" class="text-decoration-none">
-          <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-          <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-        </div>
-         <div>
-          <a href="#" class="nav-link">
-         <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-          </a>
-        </div>
-         <div>
-        <a href="#" class="nav-link">
-          <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-        </a>
-        </div>
-        </div>
-        <div class="col-6 col-md ">
-          <img src="https://m.media-amazon.com/images/I/41QFLArTr+L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-       <div class="mt-2"> <a href="#" class="text-decoration-none">
-        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-      </div>
-       <div>
-        <a href="#" class="nav-link">
-       <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-        </a>
-      </div>
-       <div>
-      <a href="#" class="nav-link">
-        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-      </a>
-      </div>
-      </div>
+                    <img src="https://m.media-amazon.com/images/I/41ogrWDMwuL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹30,335.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/31QeINr6IOL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/51mDn89POcL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/61PTHa2PThL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/31lZQVA7ucL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41QFLArTr+L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item h-100">
                 <div class="row mt-3 ms-2">
                   <div class="col-6 col-md ">
-                    <img src="https://m.media-amazon.com/images/I/41QFLArTr+L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-                 <div class="mt-2"> <a href="#" class="text-decoration-none">
-                  <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                  <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    <img src="https://m.media-amazon.com/images/I/41QFLArTr+L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹30,335.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41JzZ19v9fL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41KqTmbO7mL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41tC6RU26KL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/512su3QP5wL._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md ">
+                    <img src="https://m.media-amazon.com/images/I/41n5ynGun-L._SR480,440_.jpg"
+                      class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
+                    <div class="mt-2"> <a href="#" class="text-decoration-none">
+                        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11%
+                          off</small>
+                        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small
+                            class="text-decoration-line-through">₹34,900.00</small></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="nav-link">
+                        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                 <div>
-                  <a href="#" class="nav-link">
-                 <span class="fw-semibold">₹5,199 </span> <span>M.R.P: <small class="text-decoration-line-through">₹30,335.00</small></span>
-                  </a>
-                </div>
-                 <div>
-                <a href="#" class="nav-link">
-                  <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-                </a>
-                </div>
-                </div>
-                <div class="col-6 col-md ">
-                  <img src="https://m.media-amazon.com/images/I/41JzZ19v9fL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-               <div class="mt-2"> <a href="#" class="text-decoration-none">
-                <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-                <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-              </div>
-               <div>
-                <a href="#" class="nav-link">
-               <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-                </a>
-              </div>
-               <div>
-              <a href="#" class="nav-link">
-                <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-              </a>
-              </div>
-              </div>
-              <div class="col-6 col-md ">
-                <img src="https://m.media-amazon.com/images/I/41KqTmbO7mL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-             <div class="mt-2"> <a href="#" class="text-decoration-none">
-              <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-              <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-            </div>
-             <div>
-              <a href="#" class="nav-link">
-             <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-              </a>
-            </div>
-             <div>
-            <a href="#" class="nav-link">
-              <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-            </a>
-            </div>
-            </div>
-            <div class="col-6 col-md ">
-              <img src="https://m.media-amazon.com/images/I/41tC6RU26KL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-           <div class="mt-2"> <a href="#" class="text-decoration-none">
-            <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-            <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-          </div>
-           <div>
-            <a href="#" class="nav-link">
-           <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-            </a>
-          </div>
-           <div>
-          <a href="#" class="nav-link">
-            <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-          </a>
-          </div>
-          </div>
-          <div class="col-6 col-md ">
-            <img src="https://m.media-amazon.com/images/I/512su3QP5wL._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-         <div class="mt-2"> <a href="#" class="text-decoration-none">
-          <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-          <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-        </div>
-         <div>
-          <a href="#" class="nav-link">
-         <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-          </a>
-        </div>
-         <div>
-        <a href="#" class="nav-link">
-          <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-        </a>
-        </div>
-        </div>
-        <div class="col-6 col-md ">
-          <img src="https://m.media-amazon.com/images/I/41n5ynGun-L._SR480,440_.jpg" class="img-fluid  img-thumbnail shadow-1" alt="" style="width: 220px;">
-       <div class="mt-2"> <a href="#" class="text-decoration-none">
-        <small class="bg-danger text-white fw-bold" style="padding: 3px; font-size: 0.7rem;">11% off</small>
-        <small class="text-danger fw-bold" style="font-size: 0.8rem;">Great Freedom Sale</small></a>
-      </div>
-       <div>
-        <a href="#" class="nav-link">
-       <span class="fw-semibold">₹30,900 </span> <span>M.R.P: <small class="text-decoration-line-through">₹34,900.00</small></span>
-        </a>
-      </div>
-       <div>
-      <a href="#" class="nav-link">
-        <span style="font-size: 0.8rem;">Apple iPad (10th generation): with A1…</span>
-      </a>
-      </div>
-      </div>
-                </div>
               </div>
             </div>
-            <button class="carousel-control-prev prodctut_carousel bg-white d-none d-sm-block  translate-middle-y rounded-end s_slider_control" type="button" data-bs-target="#main4_productid3" data-bs-slide="prev" style="top: 40%;">
+            <button
+              class="carousel-control-prev prodctut_carousel bg-white d-none d-sm-block  translate-middle-y rounded-end s_slider_control"
+              type="button" data-bs-target="#main4_productid3" data-bs-slide="prev" style="top: 40%;">
               <i class="fa-solid fa-chevron-left text-body-tertiary fs-3"></i>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next prodctut_carousel bg-white d-none d-sm-block   translate-middle-y rounded-start s_slider_control" type="button" data-bs-target="#main4_productid3" data-bs-slide="next" style="top: 40%;">
+            <button
+              class="carousel-control-next prodctut_carousel bg-white d-none d-sm-block   translate-middle-y rounded-start s_slider_control"
+              type="button" data-bs-target="#main4_productid3" data-bs-slide="next" style="top: 40%;">
               <i class="fa-solid fa-chevron-right text-body-tertiary fs-3"></i>
               <span class="visually-hidden">Next</span>
             </button>
@@ -1444,7 +1661,7 @@ header>div:first-child{
         <div class="main_12 s_tbdr">main12</div>
       </div>
       <div class="main_13 s_tbdr">main13</div>
-      </div>
+    </div>
   </main>
   <footer class="text-white text-center">
     <div class="s_tbdr">A</div>
